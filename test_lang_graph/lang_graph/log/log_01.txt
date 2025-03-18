@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="코딩테스트 연습 | 프로그래머스 스쿨" itemprop="title name" name="twitter:title" property="og:title"/>
+<meta content="코딩테스트 연습 | 프로그래머스 스쿨" itemprop="title name" name="og:title" property="og:title"/>
+<meta content="개발자 취업의 필수 관문 코딩테스트를 철저하게 연습하고 대비할 수 있는 문제를 총망라! 프로그래머스에서 선발한 문제로 유형을 파악하고 실력을 업그레이드해 보세요!" itemprop="description" name="twitter:description" property="og:description"/>
+<meta content="개발자 취업의 필수 관문 코딩테스트를 철저하게 연습하고 대비할 수 있는 문제를 총망라! 프로그래머스에서 선발한 문제로 유형을 파악하고 실력을 업그레이드해 보세요!" itemprop="description" name="og:description" property="og:description"/>
+<meta content="https://school.programmers.co.kr/assets/img-meta-programmers-411e94bf29153dc31004168e6cd500279b1a531a23689303755e51971dee4526.png" itemprop="image primaryImageOfPage" name="twitter:image" property="og:image"/>
+<meta content="https://school.programmers.co.kr/assets/img-meta-programmers-411e94bf29153dc31004168e6cd500279b1a531a23689303755e51971dee4526.png" itemprop="image primaryImageOfPage" name="og:image" property="og:image"/>
+<meta content="https://school.programmers.co.kr/learn/challenges?order=recent" name="twitter:url" property="og:url"/>
+<meta content="https://school.programmers.co.kr/learn/challenges?order=recent" name="og:url" property="og:url"/>
+<meta charset="utf-8"/>
+<title>코딩테스트 연습 | 프로그래머스 스쿨</title>
+<link href="https://school.programmers.co.kr/assets/icons/favicon-ec61d910396b5fc4d7418ea44281693172c34e31d437d074f9ab5470523990fb.png" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://school.programmers.co.kr/assets/icons/apple-icon-8a32ac937e12475676c7102e99d34b7f908b3d1ac048d6eed0712ad111bfdd01.png" rel="apple-touch-icon" type="image/png"/>
+<meta content="개발자 취업의 필수 관문 코딩테스트를 철저하게 연습하고 대비할 수 있는 문제를 총망라! 프로그래머스에서 선발한 문제로 유형을 파악하고 실력을 업그레이드해 보세요!" name="description"/>
+<meta content="코딩 교육, 코딩, 프로그래밍, 실습, 생활코딩, 알고리즘" name="keywords"/>
+<meta content="339079816467879" property="fb:app_id"/>
+<meta content="website" property="og:type"/>
+<meta content="프로그래머스" property="og:site_name"/>
+<meta content="ko_KR" property="og:locale"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="https://school.programmers.co.kr/learn/challenges?order=recent" name="url"/>
+<meta content="https://school.programmers.co.kr/assets/img-meta-programmers-411e94bf29153dc31004168e6cd500279b1a531a23689303755e51971dee4526.png" name="image"/>
+<meta content="authenticity_token" name="csrf-param">
+<meta content="aR2t_TDPISF6WNqN_A5MdsO-ioNTnkmm6Y6ez3RGWJW5Osz5CH06556P6MWoH-mOG__VkHFHX_LfD1EVYAgP8g" name="csrf-token">
+<meta content="wss://ws.programmers.co.kr:443/cable" name="action-cable-url">
+<script charset="utf-8" type="text/javascript">
+  window.__env__ = {
+  STAGE: 'production',
+  SITE: 'programmers',
+  SENTRY_DSN: 'https://96f9fc1ff3f44acbb98a9c156338d14b@o1070092.ingest.sentry.io/6136918',
+  HACKLE_BROWSER_KEY: 'OKQUz9iLXiTPyzwOAyq44sT4uwMqfCzz',
+  HACKLE_EVENT_SERVER_INIT: true, // 핵클 초기화 코드 이전을 위한 임시 플래그 배포 후 삭제 예정
+  MINERVA_URL: 'minerva.programmers.co.kr',
+  HERA_CLIENT_HOST: 'https://d1nuzc1w51n1es.cloudfront.net',
+  PROGRAMMERS_HOST: 'programmers.co.kr',
+  BUSINESS_HOST: 'business.programmers.co.kr',
+  SCHOOL_HOST: 'school.programmers.co.kr',
+  INSTRUCTOR_SCHOOL_HOST: 'instructor.school.programmers.co.kr',
+  CAREER_HOST: 'career.programmers.co.kr',
+  CAMPUS_HOST: 'campus.programmers.co.kr',
+  PROGRAMMERS_WS_HOST: 'ws.programmers.co.kr',
+  COMMUNITY_HOST: 'community.programmers.co.kr',
+  QNA_HOST: 'qna.programmers.co.kr',
+  IS_PROGRAMMERS_APP_REQUEST: false,
+};
+
+</script>
+<script data-internal-account="" data-user-id="" id="__hackle-init-info"></script>
+<script src="/packs/js/runtime~hackle-event-initializer-2ff427b206be66e56397.js"></script>
+<script src="/packs/js/vendors~AppBusinessCareer~AppCareer~AppTestFormRenewal~AppTestWithSetting~hackle-event-initializer-252c24092e1bee438516.chunk.js"></script>
+<script src="/packs/js/hackle-event-initializer-f6a3f6de070426ef0fe0.chunk.js"></script>
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({
+    'gtm.start':
+      new Date().getTime(), event: 'gtm.js'
+  });
+  var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-NT8HLJD');</script>
+<!-- End Google Tag Manager -->
+</meta></meta></meta></head>
+<body>
+<script defer="defer" src="https://d1nuzc1w51n1es.cloudfront.net/801b180ea323dd7de5c7.js"></script>
+</body>
+</html>
+

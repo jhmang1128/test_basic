@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+  <h1>index</h1>
+  <a href="{% url 'articles:data_throw' %}"> move to data_throw </a><br>
+  <a href="{% url 'users:users' %}"> move to users </a><br>
+{% endblock content %}

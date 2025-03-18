@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+  <h1>Data Catch</h1>
+
+  <h3>data</h3>
+  <p> data : {{ message }} </p>
+  
+  <a href="{% url 'articles:data_throw' %}"> move to data throw </a>
+
+{% endblock content %}

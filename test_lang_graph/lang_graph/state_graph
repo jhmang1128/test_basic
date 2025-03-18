@@ -1,0 +1,7 @@
+digraph {
+	START [label=START shape=circle]
+	increment [label="Increment Counter" shape=box]
+	END [label=END shape=doublecircle]
+	START -> increment
+	increment -> END
+}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+  <h1>123</h1>
+  
+  <form action="{% url 'articles:update' article.id %}", method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">수정</button>
+
+  </form>
+
+  <a href = "{% url 'articles:articles' %}"> 목록으로 돌아가기 </a>
+
+{% endblock content %}
