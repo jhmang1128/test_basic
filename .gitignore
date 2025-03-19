@@ -6,4 +6,14 @@
 test_git/
 
 
-####
+#### python
+**/__pycache__/
+
+
+#### db file
+**/db.sqlite3
+
+
+#### django
+**/migrations/*
+!**/migrations/0001_initial.py
