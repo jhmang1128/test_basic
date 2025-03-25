@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+  {% if crud == 1 %}
+    <h1> create post </h1>
+      
+    <form action="{% url 'post:post_create' %}", method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+
+      <button type="submit"> 저장 </button>
+    </form>
+
+
+    <a href = "{% url 'post:post_list' %}">
+      <button> 목록으로 돌아가기 </button> </a>
+  
+  {% elif crud == 2 %}
+
+    <h1> update post </h1>
+    
+    <form action="{% url 'post:post_update' post.id %}", method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+
+      <button type="submit"> 수정한 내용 저장 </button>
+    </form>
+    
+    <a href = "{% url 'post:post_detail' post.id %}">
+      <button> 뒤로가기 </button> </a>
+
+  {% endif %}
+  
+{% endblock content %}

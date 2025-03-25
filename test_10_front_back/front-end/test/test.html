@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>    </style>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <!-- table 1--> 
+    <div class = "table">
+        <h1> title 1 </h1>
+        <p> contents <br> live? </p>
+    </div>
+
+    <!-- table 2 -->
+    <div class = "table">
+        <h2 style=""> title 2</h2>
+        <p> contents </p>
+        <br>
+    </div>
+
+    <a href="https://www.naver.com"> naver </a>
+
+    <div class = "user_input">
+        <form action="https://localhost:8000/api/login/", method="post">
+            <input type = "title">
+            <input type = "contents">
+            <input type="submit">
+        </form>
+    </div>
+
+    <button id="button", class=""> button </button>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function(){
+            alert("버튼 활성");
+            console.log("print 확인 오 굳")
+        });
+    </script>
+
+    <button id="test button", class=""> button </button>
+
+    <script>
+        document.getElementById('test button').addEventListener('click', function() {
+            fetch('http://localhost:8000/api/user/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer token123'
+                },
+                body: JSON.stringify({ name: '김가나', age: 20 })
+            })
+        })
+        .then(response => response.json())
+        .then(data => console.log('Success:', data))
+        .catch(error => console.error('Error:', error));
+    </script>
+
+    <script src="test.js"></script>
+</body>
+</html>
